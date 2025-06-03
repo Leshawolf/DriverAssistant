@@ -95,6 +95,6 @@ AI-ассистент помогает автовладельцам опреде
 ## 📬 Обратная связь
 
 Пиши [в Issues](https://github.com/Leshawolf/driverassistant/issues) или открывай Pull Request!
-Email: Volchek903@gmail.com
-Telegram: [volchek903](t.me/volchek903)
-Linkedin: [volchek903](https://www.linkedin.com/in/volchek903/)
+- Email: Volchek903@gmail.com
+- Telegram: [volchek903](t.me/volchek903)
+- Linkedin: [volchek903](https://www.linkedin.com/in/volchek903/)

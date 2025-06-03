@@ -55,8 +55,6 @@ AI-ассистент помогает автовладельцам опреде
 
 ## 📸 Примеры использования
 
-> Ниже ты можешь прикрепить скриншоты с Telegram-ботом
-
 ### 📄 Только текст
 
 ![Только текст](screenshots/only_text.png)
@@ -96,4 +94,7 @@ AI-ассистент помогает автовладельцам опреде
 
 ## 📬 Обратная связь
 
-Пиши [в Issues](https://github.com/your-username/driver-assistant/issues) или открывай Pull Request!
+Пиши [в Issues](https://github.com/Leshawolf/driverassistant/issues) или открывай Pull Request!
+Email: Volchek903@gmail.com
+Telegram: [volchek903](t.me/volchek903)
+Linkedin: [volchek903](https://www.linkedin.com/in/volchek903/)

@@ -30,9 +30,8 @@ client = OpenAI(
     api_key=OPENROUTER_API_KEY,
 )
 
+
 # ----------------------- Помощники для запросов -------------------------
-
-
 async def ask_llm_with_text(text: str, model: str = "anthropic/claude-sonnet-4") -> str:
     """Отправить только текст и вернуть ответ."""
     logger.debug("LLM request (text only) | model=%s", model)

@@ -9,7 +9,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from dotenv import load_dotenv
 
 # Импортируем роутеры
-from bot.handlers import cars  # основной роутер FSM для сбора марки/мотора
+from bot.handlers import diagnostic  # основной роутер FSM для сбора марки/мотора
 
 # 1. Подгружаем .env до любого обращения к переменным окружения
 load_dotenv()
@@ -39,7 +39,7 @@ async def main() -> None:
     dp = Dispatcher(storage=MemoryStorage())
 
     # Регистрируем все роутеры приложения
-    dp.include_router(cars.router)
+    dp.include_router(diagnostic.router)
 
     logging.info("🚀 Bot started and polling updates…")
     await dp.start_polling(bot)

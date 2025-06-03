@@ -3,23 +3,12 @@ import io
 from aiogram import Router, types
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
-from aiogram.enums import ParseMode
 from bot.state.car_info import CarInfo
-from bot.services.openrouter_client import client, ask_llm_with_image, ask_llm_with_text
-import re
+from bot.services.openrouter_client import ask_llm_with_image, ask_llm_with_text
+from bot.utils.md_to_html import md_headings_to_html
 
 logger = logging.getLogger(__name__)
 router = Router(name=__name__)
-
-
-_heading_re = re.compile(r"^#+\s*(.*)$", flags=re.MULTILINE)  # ### Заголовок
-_asterisk_re = re.compile(r"\*+")  # любые * или **
-
-
-def md_headings_to_html(text: str) -> str:
-    text = _heading_re.sub(r"<b>\1</b>", text)  # заголовки → <b>
-    text = _asterisk_re.sub("", text)  # удаляем все *
-    return text
 
 
 WELCOME_TEXT = (
